@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -47,16 +46,22 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          <Button variant="hero" size="lg" className="text-base px-8 py-6">
-            <Play className="w-4 h-4" /> Live Demo
+          <Button variant="hero" size="lg" className="text-base px-8 py-6 w-full">
+            AI Crop Health Scanner
           </Button>
-          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6">
-            View Architecture <ArrowRight className="w-4 h-4" />
+          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6 w-full">
+            Smart Farm Data Analyzer
+          </Button>
+          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6 w-full">
+            Profit Forecast Engine
+          </Button>
+          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6 w-full">
+            Direct Market Connect
           </Button>
         </motion.div>
       </div>
